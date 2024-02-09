@@ -1,0 +1,67 @@
+.nav {
+    color: white; /* Ensure text color is visible against the initial transparent background */
+    transition: background-color 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+    top: 0;
+    background-color: transparent; /* Start with a transparent background */
+    width: 100%; /* Ensure full width */
+    position: fixed; /* or 'sticky', depending on your layout */
+    z-index: 1000; /* Ensure it's above other content */
+    opacity: 1; /* Start fully opaque to make text visible */
+    height: 60px; /* Example height */
+    display: flex;
+    align-items: center; /* Centers the nav items vertically */
+    padding: 0 32px; /* Add some padding on the sides */
+}
+
+
+.ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.li {
+    margin: 0 1rem;
+}
+
+.a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700; /* Adjusted from 500 to 700 for bolder text */
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.a:hover {
+    color: #0070f3;
+}
+
+
+.scrolled {
+    background-color: rgba(255, 255, 255, 0.50) !important; /* Ensure visibility */
+    top: 0 !important; /* Bring into view */
+    animation: slideDown 0.5s ease forwards;
+}
+
+.nav.scrolled {
+    color: black !important; /* Change to black on scroll */
+    background-color: rgba(255, 255, 255, 0.80) !important; /* Change to white on scroll */
+    opacity: 1; /* Fully opaque to make it visible */
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+}
+    to {
+        top: 0;
+    }
+}
+
+.logo {
+    width: auto;
+    height: 25px;
+    margin-right: 16px;
+}

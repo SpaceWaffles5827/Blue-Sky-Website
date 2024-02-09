@@ -1,0 +1,65 @@
+/* ContactForm.module.css - Updated Styles */
+.contactForm {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px; /* Adjust spacing between form elements */
+  }
+  
+  .formGroup label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 16px; /* Make labels stand out */
+  }
+  
+  .formGroup input[type="text"],
+  .formGroup input[type="email"],
+  .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Adjust font size for readability */
+    color: #333; /* Text color for input and textarea */
+    background-color: #f4f4f4; /* Background color for input and textarea */
+  }
+  
+  .formGroup textarea {
+    height: 150px; /* Adjust height for message box */
+    resize: vertical; /* Allow only vertical resizing */
+  }
+  
+  .button {
+    width: auto; /* Adjust width to fit content */
+    padding: 10px 20px;
+    background-color: #0056b3; /* Primary button color */
+    color: #ffffff; /* Button text color */
+    font-size: 16px; /* Button text font size */
+    border: none;
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .button:hover {
+    background-color: #004494; /* Darker shade on hover for visual feedback */
+  }
+  
+  .button:disabled {
+    background-color: #cccccc; /* Disabled button background color */
+    cursor: not-allowed; /* Change cursor for disabled button */
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #ff3860; /* Color for error messages */
+    font-size: 14px; /* Font size for error messages */
+    margin-top: -15px; /* Position error message closer to input */
+    margin-bottom: 20px; /* Space after error message */
+  }
+  
