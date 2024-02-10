@@ -21,7 +21,7 @@ export default function Home() {
             loop
             muted
             playsInline
-            src="/pharmaTwo.mp4"
+            src="/IMG_0692.MOV"
             />
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function Home() {
               loop
               muted
               playsInline
-              src="/pharmaOne.mp4"
+              src="/IMG_0820.MOV"
             />
           </div>
           <div className={styles.right}>
