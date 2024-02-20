@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
       {
-        name: 'BlueSkyp-Frontend',
+        name: 'BlueSky-Front',
         script: 'npm',
         args: 'start',
         env: {
